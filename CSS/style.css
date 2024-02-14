@@ -1,0 +1,528 @@
+/* Universal Styles */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    font-family: 'Averia Sans Libre', sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline; 
+    padding-top: 1%;  
+}
+
+@media screen and (min-width: 1500px) {
+    h1 {
+        font-size: 4rem;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 2.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 0.8rem;
+    }
+}
+
+/* Header */
+.navbar {
+    display: flex;
+    background-color: #551E1A;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar img {
+    height: auto;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 0 1rem;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 2rem;
+    color: #FFEBB8;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* Main Content */
+main {
+    background-color: #FFEBB8;
+}
+
+/* About */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 15%;
+    background-color: #E0905C;
+    color: #FFEBB8;
+}
+
+.about h1 {
+    font-size: 4rem;
+}
+#about-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 25% 2%;
+}
+
+#about-1 h3 {
+    margin: 1% 0;
+}
+
+@media screen and (min-width: 1500px) {
+    .about h1 {
+        font-size: 6rem;
+    }
+
+    #about-1 h3 {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    #about-1 {
+        padding: 2% 15% 4%;
+    }
+
+    #about-1 h3 {
+        font-size: 1rem;
+    }
+
+}
+
+/* Teach */
+#teach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2% 5%;
+    background-color: #551E1A;
+    color: #FFEBB8;
+}
+
+/* Hank */
+.hank {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.0863fr 0.8505fr;
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    margin: 0 5vw;
+}
+
+.hank h1 {
+    font-weight: bold;
+}
+
+.hank img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.hank-1 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    padding-bottom: 3vh;
+}
+
+.hank-2 {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+}
+
+.hank-3 {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.hank-3 h3 {
+    text-align: start;
+    margin-top: 2%;
+    margin-left: 40%;
+}
+
+@media screen and (max-width: 800px) {
+    .hank {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.0863fr 0.42525fr;
+    }
+
+    .hank-2 h4 {
+        padding: 0.5% 0 2%;
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+
+    .hank-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .hank-3 h2 {
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hank-2 {
+        padding-bottom: 4%;
+    }
+
+    .hank-2 h4 {
+        font-size: 0.6rem;
+    }
+}
+
+/* Divider */
+.divider {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.divider::after {
+    content: "";
+    display: block;
+    border-top: 0.75vw solid #3f3f3f; 
+    border-radius: 10px;
+}
+
+/* Cheese */
+.cheese {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.0863fr 0.8505fr;
+    padding-top: 3vh;
+    padding-bottom: 4vh;
+    margin: 0 5vw;
+}
+
+.cheese  h1 {
+    font-weight: bold;
+}
+
+.cheese  img {
+    width: 75%;
+    display: block;
+}
+
+.cheese-1 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    padding-bottom: 3vh;
+}
+
+.cheese-2 {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.cheese-3 {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .cheese {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.0863fr 0.42525fr;
+    }
+
+    .cheese-2 {
+        grid-column: 1;
+    }
+
+    .cheese-2 h4 {
+        padding: 0.5% 0 2%;
+        font-size: 0.8rem;
+    }
+
+    .cheese-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .cheese-3 h2 {
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cheese-2 {
+        padding-bottom: 4%;
+    }
+
+    .cheese-2 h4 {
+        font-size: 0.6rem;
+    }
+}
+
+/* Canning */
+.cans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.0863fr 0.8505fr;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    margin: 0 5vw;
+}
+
+.cans  h1 {
+    font-weight: bold;
+}
+
+.cans  img {
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+}
+
+.cans-1 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    padding-bottom: 3vh;
+}
+
+.cans-2 {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+
+.cans-3 {
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .cans {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.0863fr 0.02525fr;
+    }
+
+    .cans-2 h4 {
+        padding: 0.5% 0 2%;
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+
+    .cans-3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .cans-3 h2 {
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cans-2 {
+        padding-bottom: 4%;
+    }
+
+    .cans-2 h4 {
+        font-size: 0.6rem;
+    }
+}
+
+/* Meetings */
+.meetings {
+    background-color: #E0905C;
+    text-align: center;
+    padding: 4% 0 1%;
+}
+
+.meetings button {
+    background-color: #FFEBB8;
+    border: none;
+    color: black;
+    padding: 1% 2%;
+    margin: 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+.meetings h3 {
+    margin-top: 1%;
+}
+
+@media screen and (min-width: 1500px) {
+    .meetings button {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .meetings button {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .meetings button {
+        font-size: 0.5rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #551E1A;
+}
+
+.footerbar {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+.footerbar img {
+    height: auto;
+    width: 6%;
+}
+
+.footerbar ul {
+    display: flex;
+    align-self: center;
+}
+
+.footerbar ul li a {
+    text-decoration: none;
+    padding: 0 1rem;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 1.5rem;
+    color: #FFEBB8;
+}
+
+.footerbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.copyright h1 {
+    font-size: 1.2rem;
+    margin-top: 1%;
+}
+
+@media screen and (max-width: 800px) {
+    .footerbar {
+        padding-top: 1rem;
+    }
+
+    .footerbar ul li a {
+        font-size: 1rem;
+    }
+    
+    .copyright h1 {
+       font-size: 0.8rem; 
+    }
+}
